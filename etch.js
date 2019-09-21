@@ -1,6 +1,10 @@
 // Add Event Listeners here:
-
-
+$('.grid').on('mouseover', '.cell', function(event) {
+  $(this).addClass('active');
+});
+$('.controls').on('click', 'button', function(event) {
+  createAndPlaceRows(8);
+  });
 // When DOM is ready:
 $(() => {
   createAndPlaceRows(8);
